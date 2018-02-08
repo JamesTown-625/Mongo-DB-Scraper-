@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scraping IGN News Articles</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <style>
+      body { 
+        background-image: url(./BG.PNG);
+       }
+      #wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+        margin-right:30px;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+      h1 {
+        font-size: 56px;
+        text-align: center;
+      }
+      .jumbotron {
+        background-color: maroon;
+        color: white;
+        font-size: 48px;
+        height: auto;
+      }
+      .panel {
+        background-color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>IGN news articles</h1>
+        <h2>Read and make notes on IGN News articles</h2>
+        <h3>Scrape IGN articles to get started</h3>
+        <button class="btn btn-danger btn-lg" id="scrapeBtn" href="/scrape">Scrape Away!</button>
+
+      </div>
+      
+      <div class="panel">
+        <div id="wrapper">
+          <div id="articles"></div>
+          <div id="notes"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
